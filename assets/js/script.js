@@ -21,7 +21,7 @@ const weatherFiveDay = [];
 
 // turn the city name into usable data for the api
 function getWeather(cityName) {
-  const geoCodeUrl = `http://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=5&appid=${APIKey}`;
+  const geoCodeUrl = `https://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=5&appid=${APIKey}`;
 
   fetch(geoCodeUrl)
     .then(function (response) {
